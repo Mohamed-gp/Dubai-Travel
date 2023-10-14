@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-content{
+    background-image: url(/public/assests/dubaiii.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 90vh;
+    background-size: cover;
+    
+}
+
+@media (max-width: 640px) {
+    .clip-Path-closed{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .clip-Path-open{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.dubai-waiting-bg{
+    background-image: url(/public/assests/skyscrepper.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+button:disabled{
+    opacity: .5;
+    cursor: not-allowed !important;
+}
+.activepage{
+    background-color: red;
+}

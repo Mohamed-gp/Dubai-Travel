@@ -1,9 +1,19 @@
 import "./index.scss";
+import Header from "./Component/header";
+import Home from "./pages/Home";
+import { BrowserRouter , Route , Routes } from "react-router-dom";
+
 
 function App() {
   return (
     <>
-      <p className="bg-yellow-400 p-24 md:text-yellow-300 ">bata </p>hello
+    
+    <BrowserRouter>
+    <Header/>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+    </Routes>
+    </BrowserRouter>
     </>
   );
 }

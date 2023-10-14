@@ -9,6 +9,9 @@ export default {
       center : true,
     },
     extend: {
+      colors:{
+        mr: "#f8460b",
+      },
     },
   },
   plugins: [],
